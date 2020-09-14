@@ -1117,6 +1117,55 @@ nav.navigation {
   .eventdate .eventdate__buy:visited {
     color: #fff;
   }
+  .eventdate__mailing {
+    margin: 60px 0 32px;
+    p {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 16px;
+      white-space: nowrap;
+      & + * {
+        margin-top: 16px;
+      }
+    }
+    input {
+      border: 1px solid #BABABA;
+      background-color: transparent;
+      padding: 14px 10px 12px 22px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 42px;
+      font-size: 16px;
+      line-height: 16px;
+      &::placeholder {
+          color: #000;
+          font-size: 16px;
+          line-height: 16px;
+          opacity: .5;
+      }
+      &:focus {
+          outline: none;
+      }
+      & + * {
+        margin-top: 32px;
+      }
+    }
+    button {
+      font-size: 12px;
+      line-height: 12px;
+      text-transform: uppercase;
+      background-color: #5945F3;
+      color: #fff;
+      padding: 15px 29px 13px;
+      height: 42px;
+      border: none;
+      cursor: pointer;
+      margin-left: auto;
+      &:hover {
+          background-color: #EE706B;
+      }
+    }
+  }
   .eventtitle {
     font-size: 57px;
     line-height: 57px;
