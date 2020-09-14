@@ -402,6 +402,26 @@
                         </div>
                     </div>
                 </section>
+
+                <div class="mailing">
+                    <div class="mailing__container">
+                        <p class="mailing__text">Оставьте свой e-mail, чтобы первыми узнать о самых свежих анонсах и новостях.<br>Обещаем не спамить и присылать только классные письма!</p>
+                        <form action="#" class="mailing__form">
+                            <input type="email" class="mailing__input" placeholder="Почта">
+                            <button type="submit" class="mailing__button">Подписаться</button>
+                        </form>
+                        <a id="mailingLink" onclick="jsfunction()" href="javascript:void(0);" class="mailing__close"><span>Нет, спасибо</span><svg><use xlink:href="static/images/sprites.svg#cross"></use></svg></a>
+                        <script type="text/javascript">
+                            window.onload = function() {
+
+                              var a = document.getElementById("mailingLink");
+                              a.onclick = function() {
+                                document.getElementsByClassName('mailing')[0].style.display = 'none';
+                              }
+                            }
+                        </script>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
