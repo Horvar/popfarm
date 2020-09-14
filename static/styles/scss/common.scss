@@ -1,0 +1,10 @@
+@function pxToVw($screen, $input) {
+    $result: ($input / 1px ) / ($screen / 100) * 1vw;
+    @return $result;
+}
+
+.title-hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
