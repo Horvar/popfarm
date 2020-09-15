@@ -5182,6 +5182,72 @@ ul.posterprogressbar {
   height: 0;
   overflow: hidden; }
 
+/* line 12, static/styles/scss/common.scss */
+.eventdate__mailing {
+  margin: 60px 0 32px; }
+  /* line 14, static/styles/scss/common.scss */
+  .eventdate__mailing p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    white-space: nowrap; }
+    /* line 19, static/styles/scss/common.scss */
+    .eventdate__mailing p + * {
+      margin-top: 16px; }
+  /* line 23, static/styles/scss/common.scss */
+  .eventdate__mailing input {
+    border: 1px solid #BABABA;
+    background-color: transparent;
+    padding: 14px 10px 12px 22px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 42px;
+    font-size: 16px;
+    line-height: 16px; }
+    /* line 32, static/styles/scss/common.scss */
+    .eventdate__mailing input::-webkit-input-placeholder {
+      color: #000;
+      font-size: 16px;
+      line-height: 16px;
+      opacity: .5; }
+    .eventdate__mailing input:-ms-input-placeholder {
+      color: #000;
+      font-size: 16px;
+      line-height: 16px;
+      opacity: .5; }
+    .eventdate__mailing input::-ms-input-placeholder {
+      color: #000;
+      font-size: 16px;
+      line-height: 16px;
+      opacity: .5; }
+    .eventdate__mailing input::placeholder {
+      color: #000;
+      font-size: 16px;
+      line-height: 16px;
+      opacity: .5; }
+    /* line 38, static/styles/scss/common.scss */
+    .eventdate__mailing input:focus {
+      outline: none; }
+    /* line 41, static/styles/scss/common.scss */
+    .eventdate__mailing input + * {
+      margin-top: 32px; }
+  /* line 45, static/styles/scss/common.scss */
+  .eventdate__mailing button {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    background-color: #5945F3;
+    color: #fff;
+    padding: 15px 29px 13px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto; }
+    /* line 56, static/styles/scss/common.scss */
+    .eventdate__mailing button:hover {
+      background-color: #EE706B; }
+
 /* line 1, static/styles/scss/calendar/calendar.scss */
 .calendar {
   padding-top: 64px; }
