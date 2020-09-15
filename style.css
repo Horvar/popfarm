@@ -5219,26 +5219,29 @@ ul.posterprogressbar {
   position: relative;
   margin: -1px -1px 0 0;
   border: 1px solid #E0E0E0; }
+  /* line 33, static/styles/scss/calendar/calendar.scss */
+  .calendar__event:hover .calendar__event-button {
+    visibility: visible; }
 
-/* line 33, static/styles/scss/calendar/calendar.scss */
+/* line 38, static/styles/scss/calendar/calendar.scss */
 .calendar__event-content {
   padding: 12px 24px 8px 12px; }
 
-/* line 38, static/styles/scss/calendar/calendar.scss */
+/* line 43, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date_pink {
   color: #EE706B; }
-/* line 41, static/styles/scss/calendar/calendar.scss */
+/* line 46, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date + * {
   margin-top: 8px; }
-/* line 44, static/styles/scss/calendar/calendar.scss */
+/* line 49, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date p {
   font-weight: bold;
   font-size: 28px;
   line-height: 28px; }
-  /* line 48, static/styles/scss/calendar/calendar.scss */
+  /* line 53, static/styles/scss/calendar/calendar.scss */
   .calendar__event-date p + .calendar__event-date p {
     margin-left: 4px; }
-  /* line 51, static/styles/scss/calendar/calendar.scss */
+  /* line 56, static/styles/scss/calendar/calendar.scss */
   .calendar__event-date p span {
     position: absolute;
     font-size: 8px;
@@ -5246,26 +5249,26 @@ ul.posterprogressbar {
     text-transform: uppercase;
     margin-left: 4px; }
 
-/* line 60, static/styles/scss/calendar/calendar.scss */
+/* line 65, static/styles/scss/calendar/calendar.scss */
 .calendar__event-name {
   display: block;
   text-decoration: none;
   color: #000; }
-  /* line 64, static/styles/scss/calendar/calendar.scss */
+  /* line 69, static/styles/scss/calendar/calendar.scss */
   .calendar__event-name + * {
     margin-top: 8px; }
-  /* line 67, static/styles/scss/calendar/calendar.scss */
+  /* line 72, static/styles/scss/calendar/calendar.scss */
   .calendar__event-name:hover {
     color: #5945F3; }
-  /* line 70, static/styles/scss/calendar/calendar.scss */
+  /* line 75, static/styles/scss/calendar/calendar.scss */
   .calendar__event-name p {
     font-weight: bold;
     font-size: 16px;
     line-height: 16px; }
-    /* line 74, static/styles/scss/calendar/calendar.scss */
+    /* line 79, static/styles/scss/calendar/calendar.scss */
     .calendar__event-name p + .calendar__event-name p {
       margin-left: 6px; }
-    /* line 77, static/styles/scss/calendar/calendar.scss */
+    /* line 82, static/styles/scss/calendar/calendar.scss */
     .calendar__event-name p span {
       position: absolute;
       font-size: 8px;
@@ -5273,7 +5276,7 @@ ul.posterprogressbar {
       text-transform: uppercase;
       margin-left: 4px; }
 
-/* line 86, static/styles/scss/calendar/calendar.scss */
+/* line 91, static/styles/scss/calendar/calendar.scss */
 .calendar__event-location {
   font-weight: bold;
   font-size: 12px;
@@ -5281,7 +5284,7 @@ ul.posterprogressbar {
   text-transform: uppercase;
   opacity: .5; }
 
-/* line 93, static/styles/scss/calendar/calendar.scss */
+/* line 98, static/styles/scss/calendar/calendar.scss */
 .calendar__event-status {
   font-size: 10px;
   line-height: 10px;
@@ -5290,14 +5293,15 @@ ul.posterprogressbar {
   margin-top: auto;
   padding: 0 6px 8px 12px; }
 
-/* line 101, static/styles/scss/calendar/calendar.scss */
+/* line 106, static/styles/scss/calendar/calendar.scss */
 .calendar__event-button {
   width: calc(100% + 2px);
   margin-left: -1px;
   margin-bottom: -1px;
   margin-top: auto;
-  z-index: 1; }
-  /* line 107, static/styles/scss/calendar/calendar.scss */
+  z-index: 1;
+  visibility: hidden; }
+  /* line 113, static/styles/scss/calendar/calendar.scss */
   .calendar__event-button a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5315,11 +5319,11 @@ ul.posterprogressbar {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 12px; }
-    /* line 119, static/styles/scss/calendar/calendar.scss */
+    /* line 125, static/styles/scss/calendar/calendar.scss */
     .calendar__event-button a:hover {
       background-color: #EE706B; }
 
-/* line 125, static/styles/scss/calendar/calendar.scss */
+/* line 131, static/styles/scss/calendar/calendar.scss */
 .calendar__event-rescheduling {
   position: absolute;
   width: 100%;

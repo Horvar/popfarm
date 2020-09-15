@@ -395,26 +395,6 @@
                             </div>
                         </div>
                     </div>
-                    <script>
-                        [].forEach.call(document.querySelectorAll('.calendar__event-button'), function (el) {
-                            el.style.visibility = 'hidden';
-                        });
-                        var element = document.querySelectorAll('.calendar__event');
-                        [].forEach.call(element, function (el) {
-                            el.addEventListener('mouseenter', function() {
-                                let childButton = this.querySelector('.calendar__event-button');
-                                if ( childButton ) {
-                                    childButton.style.visibility = 'visible';
-                                }
-                            });
-                            el.addEventListener('mouseleave', function() {
-                                let childButton = this.querySelector('.calendar__event-button');
-                                if ( childButton ) {
-                                    childButton.style.visibility = 'hidden';
-                                }
-                            });
-                        });
-                    </script>
                 </section>
 
                 <div class="mailing">
