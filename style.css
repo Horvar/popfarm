@@ -5225,7 +5225,7 @@ ul.posterprogressbar {
   padding: 12px 24px 8px 12px; }
 
 /* line 38, static/styles/scss/calendar/calendar.scss */
-.calendar__event-date_weekend {
+.calendar__event-date_pink {
   color: #EE706B; }
 /* line 41, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date + * {
