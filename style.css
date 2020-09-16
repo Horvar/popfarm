@@ -5222,45 +5222,45 @@ ul.posterprogressbar {
   position: relative;
   margin: -1px -1px 0 0;
   border: 1px solid #E0E0E0; }
-  /* line 35, static/styles/scss/calendar/calendar.scss */
-  .calendar__event_no-hover {
-    pointer-events: none; }
-  /* line 39, static/styles/scss/calendar/calendar.scss */
+  /* line 36, static/styles/scss/calendar/calendar.scss */
   .calendar__event:hover .calendar__event-button {
     overflow: visible;
     max-height: 40px; }
-  /* line 43, static/styles/scss/calendar/calendar.scss */
+  /* line 40, static/styles/scss/calendar/calendar.scss */
   .calendar__event:hover .calendar__event-location {
     display: none; }
+  /* line 46, static/styles/scss/calendar/calendar.scss */
+  .calendar__event_no-hover:hover .calendar__event-location {
+    display: block; }
 
-/* line 48, static/styles/scss/calendar/calendar.scss */
+/* line 52, static/styles/scss/calendar/calendar.scss */
 .calendar__event-content {
   padding: 12px 24px 8px 12px;
   height: 100%;
   text-decoration: none;
   color: inherit; }
-  /* line 54, static/styles/scss/calendar/calendar.scss */
+  /* line 58, static/styles/scss/calendar/calendar.scss */
   .calendar__event-content:hover .calendar__event-date {
     color: #5945F3; }
-  /* line 57, static/styles/scss/calendar/calendar.scss */
+  /* line 61, static/styles/scss/calendar/calendar.scss */
   .calendar__event-content:hover .calendar__event-name {
     color: #5945F3; }
 
-/* line 64, static/styles/scss/calendar/calendar.scss */
+/* line 68, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date_pink {
   color: #EE706B; }
-/* line 67, static/styles/scss/calendar/calendar.scss */
+/* line 71, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date + * {
   margin-top: 8px; }
-/* line 70, static/styles/scss/calendar/calendar.scss */
+/* line 74, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date p {
   font-weight: bold;
   font-size: 28px;
   line-height: 28px; }
-  /* line 74, static/styles/scss/calendar/calendar.scss */
+  /* line 78, static/styles/scss/calendar/calendar.scss */
   .calendar__event-date p + .calendar__event-date p {
     margin-left: 4px; }
-  /* line 77, static/styles/scss/calendar/calendar.scss */
+  /* line 81, static/styles/scss/calendar/calendar.scss */
   .calendar__event-date p span {
     position: absolute;
     font-size: 8px;
@@ -5268,23 +5268,23 @@ ul.posterprogressbar {
     text-transform: uppercase;
     margin-left: 4px; }
 
-/* line 86, static/styles/scss/calendar/calendar.scss */
+/* line 90, static/styles/scss/calendar/calendar.scss */
 .calendar__event-name {
   display: block;
   text-decoration: none;
   color: #000; }
-  /* line 90, static/styles/scss/calendar/calendar.scss */
+  /* line 94, static/styles/scss/calendar/calendar.scss */
   .calendar__event-name + * {
     margin-top: 8px; }
-  /* line 93, static/styles/scss/calendar/calendar.scss */
+  /* line 97, static/styles/scss/calendar/calendar.scss */
   .calendar__event-name p {
     font-weight: bold;
     font-size: 16px;
     line-height: 16px; }
-    /* line 97, static/styles/scss/calendar/calendar.scss */
+    /* line 101, static/styles/scss/calendar/calendar.scss */
     .calendar__event-name p + .calendar__event-name p {
       margin-left: 6px; }
-    /* line 100, static/styles/scss/calendar/calendar.scss */
+    /* line 104, static/styles/scss/calendar/calendar.scss */
     .calendar__event-name p span {
       position: absolute;
       font-size: 8px;
@@ -5292,7 +5292,7 @@ ul.posterprogressbar {
       text-transform: uppercase;
       margin-left: 4px; }
 
-/* line 109, static/styles/scss/calendar/calendar.scss */
+/* line 113, static/styles/scss/calendar/calendar.scss */
 .calendar__event-location {
   font-weight: bold;
   font-size: 12px;
@@ -5301,7 +5301,7 @@ ul.posterprogressbar {
   opacity: .5;
   height: 32px; }
 
-/* line 117, static/styles/scss/calendar/calendar.scss */
+/* line 121, static/styles/scss/calendar/calendar.scss */
 .calendar__event-status {
   font-size: 10px;
   line-height: 10px;
@@ -5310,7 +5310,7 @@ ul.posterprogressbar {
   margin-top: auto;
   padding: 0 6px 8px 12px; }
 
-/* line 125, static/styles/scss/calendar/calendar.scss */
+/* line 129, static/styles/scss/calendar/calendar.scss */
 .calendar__event-button {
   width: calc(100% + 2px);
   margin-left: -1px;
@@ -5319,7 +5319,7 @@ ul.posterprogressbar {
   z-index: 1;
   overflow: hidden;
   max-height: 0; }
-  /* line 133, static/styles/scss/calendar/calendar.scss */
+  /* line 137, static/styles/scss/calendar/calendar.scss */
   .calendar__event-button a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5337,11 +5337,11 @@ ul.posterprogressbar {
     text-transform: uppercase;
     font-size: 12px;
     line-height: 12px; }
-    /* line 145, static/styles/scss/calendar/calendar.scss */
+    /* line 149, static/styles/scss/calendar/calendar.scss */
     .calendar__event-button a:hover {
       background-color: #EE706B; }
 
-/* line 151, static/styles/scss/calendar/calendar.scss */
+/* line 155, static/styles/scss/calendar/calendar.scss */
 .calendar__event-rescheduling {
   position: absolute;
   width: 100%;

@@ -32,9 +32,6 @@
     position: relative;
     margin: -1px -1px 0 0;
     border: 1px solid #E0E0E0;
-    &_no-hover {
-        pointer-events: none;
-    }
     &:hover {
         .calendar__event-button {
             overflow: visible;
@@ -42,6 +39,13 @@
         }
         .calendar__event-location {
             display: none;
+        }
+    }
+    &_no-hover {
+        &:hover {
+            .calendar__event-location {
+                display: block;
+            }
         }
     }
 }
