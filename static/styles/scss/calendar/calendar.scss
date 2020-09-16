@@ -20,6 +20,9 @@
     font-size: 28px;
     line-height: 28px;
     padding: 45px 23px 0 pxToVw(1440, 45px);
+    p {
+        display: table-caption;
+    }
 }
 
 .calendar__event {
@@ -29,14 +32,32 @@
     position: relative;
     margin: -1px -1px 0 0;
     border: 1px solid #E0E0E0;
+    &_no-hover {
+        pointer-events: none;
+    }
     &:hover {
         .calendar__event-button {
-            visibility: visible;
+            overflow: visible;
+            max-height: 40px;
+        }
+        .calendar__event-location {
+            display: none;
         }
     }
 }
 .calendar__event-content {
     padding: 12px 24px 8px 12px;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        .calendar__event-date {
+            color: #5945F3;
+        }
+        .calendar__event-name {
+            color: #5945F3;
+        }
+    }
 }
 
 .calendar__event-date {
@@ -69,9 +90,6 @@
     & + * {
         margin-top: 8px;
     }
-    &:hover {
-        color: #5945F3;
-    }
     p {
         font-weight: bold;
         font-size: 16px;
@@ -94,6 +112,7 @@
     line-height: 12px;
     text-transform: uppercase;
     opacity: .5;
+    height: 32px;
 }
 .calendar__event-status {
     font-size: 10px;
@@ -109,7 +128,8 @@
     margin-bottom: -1px;
     margin-top: auto;
     z-index: 1;
-    visibility: hidden;
+    overflow: hidden;
+    max-height: 0;
     a {
         display: flex;
         align-items: center;
