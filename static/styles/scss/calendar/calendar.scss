@@ -15,6 +15,7 @@
 .calendar__month {
     grid-row: span 100;
     width: pxToVw(1440, 213px);
+    min-width: 200px;
     box-sizing: border-box;
     font-weight: bold;
     font-size: 28px;
@@ -26,7 +27,7 @@
 }
 
 .calendar__event {
-    min-width: pxToVw(1440, 168px);
+    min-width: 168px;
     display: flex;
     flex-direction: column;
     position: relative;
