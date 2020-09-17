@@ -14,8 +14,7 @@
 
 .calendar__month {
     grid-row: span 100;
-    width: pxToVw(1440, 213px);
-    min-width: 200px;
+    min-width: 213px;
     box-sizing: border-box;
     font-weight: bold;
     font-size: 28px;
