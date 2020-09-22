@@ -386,7 +386,7 @@
                                     </div>
                                 </div>
                                 <!-- event 7 -->
-                                <div class="calendar__event">
+                                <div class="calendar__event calendar__event_yellow">
                                     <a href="#" class="calendar__event-content">
                                         <div class="calendar__event-date">
                                             <p>18<span>cp</span></p>
@@ -416,11 +416,11 @@
                                         </div>
                                     </a>
                                     <div class="calendar__event-status">
-                                        <p>Билеты скоро в продаже</p>
+                                        <p>Билеты скоро в&nbsp;продаже</p>
                                     </div>
                                 </div>
                                 <!-- event 9 -->
-                                <div class="calendar__event">
+                                <div class="calendar__event calendar__event_gray">
                                     <a href="#" class="calendar__event-content">
                                         <div class="calendar__event-date">
                                             <p>25<span>пт</span></p>
@@ -432,12 +432,12 @@
                                             <p>Москва, Aglomerat, 20:00</p>
                                         </div>
                                     </a>
-                                    <div class="calendar__event-button">
-                                        <a href="#">Купить билет</a>
+                                    <div class="calendar__event-status calendar__event-status_tick">
+                                        <p>Перенесен на&nbsp;12&nbsp;августа 2021</p>
                                     </div>
                                 </div>
                                 <!-- event 10 -->
-                                <div class="calendar__event">
+                                <div class="calendar__event calendar__event_crossed">
                                     <a href="#" class="calendar__event-content">
                                         <div class="calendar__event-date">
                                             <p>26<span>сб</span></p>
@@ -449,14 +449,24 @@
                                             <p>Санкт-Петербург, МОРЗЕ, 20:00</p>
                                         </div>
                                     </a>
-                                    <div class="calendar__event-button">
-                                        <a href="#">Купить билет</a>
+                                    <div class="calendar__event-status">
+                                        <p>Отменен</p>
                                     </div>
-                                    <p class="calendar__event-rescheduling">Перенос<br>на 04.07.21</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <script>
+                        var test = document.querySelectorAll('.calendar__event_crossed');
+                        test.forEach(function(element, index) {
+                            let elem = element
+                            let w = elem.offsetWidth
+                            let h = elem.offsetHeight
+                            let d = Math.sqrt(w*w + h*h)
+                            let angle = Math.atan2(w, h) * 180 / Math.PI
+                            elem.style.background = 'linear-gradient(calc(90deg - '+angle+'deg), #fff calc(50% - 1px), red, #fff calc(50% + 1px))';
+                        });
+                    </script>
                 </section>
 
                 <div class="mailing">
