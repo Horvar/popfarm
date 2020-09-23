@@ -109,6 +109,7 @@
     &_crossed {
         @media (max-width: 740px) {
             border: 1px solid #FB7053;
+            background: linear-gradient(to top right, transparent calc(50% - 1px), #FB7053, transparent calc(50% + 1px) );
             .calendar__event-date, .calendar__event-name, .calendar__event-location {
                 color: #000;
                 * {
