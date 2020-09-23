@@ -104,6 +104,31 @@
                     color: #828282;
                 }
             }
+            .calendar__event-status {
+                position: relative;
+                &:before {
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    background-color: #FB7053;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                }
+                &:after {
+                    content: '';
+                    width: 7px;
+                    height: 7px;
+                    border-top: 1px solid #fff;
+                    border-left: 1px solid #fff;
+                    position: absolute;
+                    bottom: 19px;
+                    left: 50%;
+                    transform: translate(-50%, 0) rotate(-135deg);
+                }
+            }
         }
     }
     &_crossed {
