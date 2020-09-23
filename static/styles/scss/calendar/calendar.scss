@@ -97,6 +97,13 @@
         }
     }
     &_gray {
+        .calendar__event-status {
+            position: relative;
+            display: none;
+            @media (max-width: 740px) {
+                display: flex;
+            }
+        }
         @media (max-width: 740px) {
             .calendar__event-date, .calendar__event-name, .calendar__event-location {
                 color: #828282;
@@ -417,4 +424,7 @@
     line-height: 10px;
     text-transform: uppercase;
     z-index: -1;
+    @media (max-width: 740px) {
+        display: none;
+    }
 }
