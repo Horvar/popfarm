@@ -5182,6 +5182,25 @@ ul.posterprogressbar {
     .eventdate__mailing button:hover {
       background-color: #EE706B; }
 
+/* line 62, static/styles/scss/common.scss */
+.about .about__content .about__contacts .about__contacts__social {
+  margin: 0; }
+
+/* line 66, static/styles/scss/common.scss */
+.container {
+  max-width: 100%;
+  padding: 0 67px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media (max-width: 992px) {
+    /* line 66, static/styles/scss/common.scss */
+    .container {
+      padding: 0 24px; } }
+  @media (max-width: 540px) {
+    /* line 66, static/styles/scss/common.scss */
+    .container {
+      padding: 0 16px; } }
+
 /* line 1, static/styles/scss/calendar/calendar.scss */
 .calendar {
   padding-top: 64px; }
@@ -5663,6 +5682,118 @@ ul.posterprogressbar {
     .calendar__event-rescheduling {
       display: none; } }
 
+/* line 1, static/styles/scss/contacts/contacts.scss */
+.contacts {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding-top: 64px;
+  padding-bottom: 60px; }
+
+/* line 10, static/styles/scss/contacts/contacts.scss */
+.contacts__title {
+  font-size: 57px;
+  margin-top: 66px;
+  font-weight: bold; }
+
+/* line 15, static/styles/scss/contacts/contacts.scss */
+.contacts__content {
+  width: 892px;
+  max-width: 100%;
+  margin-top: 45px; }
+  @media (max-width: 540px) {
+    /* line 15, static/styles/scss/contacts/contacts.scss */
+    .contacts__content {
+      margin-top: 30px; } }
+
+/* line 24, static/styles/scss/contacts/contacts.scss */
+.contacts__social {
+  padding-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -10px; }
+  @media (max-width: 540px) {
+    /* line 24, static/styles/scss/contacts/contacts.scss */
+    .contacts__social {
+      padding-bottom: 40px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  /* line 35, static/styles/scss/contacts/contacts.scss */
+  .contacts__social a {
+    padding: 10px; }
+    /* line 37, static/styles/scss/contacts/contacts.scss */
+    .contacts__social a + a {
+      margin-left: 68px; }
+      @media (max-width: 540px) {
+        /* line 37, static/styles/scss/contacts/contacts.scss */
+        .contacts__social a + a {
+          margin-left: 0; } }
+
+/* line 47, static/styles/scss/contacts/contacts.scss */
+.contacts__tabs > label {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.002em;
+  color: #000000;
+  opacity: 0.3;
+  cursor: pointer; }
+  @media (max-width: 620px) {
+    /* line 47, static/styles/scss/contacts/contacts.scss */
+    .contacts__tabs > label {
+      display: block; } }
+  /* line 58, static/styles/scss/contacts/contacts.scss */
+  .contacts__tabs > label:hover {
+    color: #5945F3;
+    opacity: 0.3; }
+  /* line 62, static/styles/scss/contacts/contacts.scss */
+  .contacts__tabs > label:not(:first-of-type) {
+    margin-left: 24px; }
+    @media (max-width: 620px) {
+      /* line 62, static/styles/scss/contacts/contacts.scss */
+      .contacts__tabs > label:not(:first-of-type) {
+        margin-left: 0;
+        margin-top: 16px; } }
+  @media (max-width: 992px) {
+    /* line 47, static/styles/scss/contacts/contacts.scss */
+    .contacts__tabs > label {
+      font-size: 18px;
+      line-height: 18px; } }
+  @media (max-width: 540px) {
+    /* line 47, static/styles/scss/contacts/contacts.scss */
+    .contacts__tabs > label {
+      font-size: 16px;
+      line-height: 16px; } }
+/* line 78, static/styles/scss/contacts/contacts.scss */
+.contacts__tabs > input {
+  display: none; }
+  /* line 80, static/styles/scss/contacts/contacts.scss */
+  .contacts__tabs > input:checked + label {
+    opacity: 1;
+    color: #5945F3; }
+  /* line 86, static/styles/scss/contacts/contacts.scss */
+  .contacts__tabs > input#tab1:checked ~ .contacts__tab-content-list .contacts__tab-content-item_1 {
+    display: block; }
+  /* line 91, static/styles/scss/contacts/contacts.scss */
+  .contacts__tabs > input#tab2:checked ~ .contacts__tab-content-list .contacts__tab-content-item_2 {
+    display: block; }
+  /* line 96, static/styles/scss/contacts/contacts.scss */
+  .contacts__tabs > input#tab3:checked ~ .contacts__tab-content-list .contacts__tab-content-item_3 {
+    display: block; }
+
+/* line 102, static/styles/scss/contacts/contacts.scss */
+.contacts__tab-content-list {
+  margin-top: 30px; }
+
+/* line 105, static/styles/scss/contacts/contacts.scss */
+.contacts__tab-content-item {
+  display: none; }
+
 /* line 1, static/styles/scss/global/mailing.scss */
 .mailing {
   background-color: #EEEEEE;
@@ -5774,5 +5905,177 @@ ul.posterprogressbar {
     fill: #000;
     width: 32px;
     height: 32px; }
+
+/* line 3, static/styles/scss/global/form.scss */
+.form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 620px) {
+    /* line 3, static/styles/scss/global/form.scss */
+    .form__inputs {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  /* line 9, static/styles/scss/global/form.scss */
+  .form__inputs input[type=text] {
+    outline: none;
+    width: 100%;
+    padding: 14px 16px 12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #BABABA; }
+    /* line 19, static/styles/scss/global/form.scss */
+    .form__inputs input[type=text]::-webkit-input-placeholder {
+      color: #000;
+      opacity: 0.5; }
+    .form__inputs input[type=text]:-ms-input-placeholder {
+      color: #000;
+      opacity: 0.5; }
+    .form__inputs input[type=text]::-ms-input-placeholder {
+      color: #000;
+      opacity: 0.5; }
+    .form__inputs input[type=text]::placeholder {
+      color: #000;
+      opacity: 0.5; }
+    /* line 23, static/styles/scss/global/form.scss */
+    .form__inputs input[type=text] + input {
+      margin-top: 16px; }
+  /* line 27, static/styles/scss/global/form.scss */
+  .form__inputs textarea {
+    outline: none;
+    font-family: 'Popfarm';
+    width: 100%;
+    height: 100%;
+    padding: 14px 16px 12px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #BABABA; }
+    @media (max-width: 620px) {
+      /* line 27, static/styles/scss/global/form.scss */
+      .form__inputs textarea {
+        height: 114px; } }
+    /* line 42, static/styles/scss/global/form.scss */
+    .form__inputs textarea::-webkit-input-placeholder {
+      color: #000;
+      opacity: 0.5; }
+    .form__inputs textarea:-ms-input-placeholder {
+      color: #000;
+      opacity: 0.5; }
+    .form__inputs textarea::-ms-input-placeholder {
+      color: #000;
+      opacity: 0.5; }
+    .form__inputs textarea::placeholder {
+      color: #000;
+      opacity: 0.5; }
+
+/* line 49, static/styles/scss/global/form.scss */
+.form__col + .form__col {
+  margin-left: 40px; }
+  @media (max-width: 620px) {
+    /* line 49, static/styles/scss/global/form.scss */
+    .form__col + .form__col {
+      margin-left: 0; } }
+  @media (max-width: 992px) {
+    /* line 49, static/styles/scss/global/form.scss */
+    .form__col + .form__col {
+      margin-left: 20px; } }
+  @media (max-width: 620px) {
+    /* line 49, static/styles/scss/global/form.scss */
+    .form__col + .form__col {
+      margin-left: 0;
+      margin-top: 16px; } }
+/* line 62, static/styles/scss/global/form.scss */
+.form__col_1 {
+  width: 282px;
+  max-width: 50%; }
+  @media (max-width: 620px) {
+    /* line 62, static/styles/scss/global/form.scss */
+    .form__col_1 {
+      width: 100%;
+      max-width: 100%; } }
+/* line 70, static/styles/scss/global/form.scss */
+.form__col_2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+/* line 75, static/styles/scss/global/form.scss */
+.form__agreement {
+  display: inline-block;
+  cursor: pointer;
+  margin: 14px 0 10px;
+  padding: 10px 0; }
+  /* line 80, static/styles/scss/global/form.scss */
+  .form__agreement input {
+    display: none; }
+    /* line 84, static/styles/scss/global/form.scss */
+    .form__agreement input:checked + span::after {
+      display: block; }
+  /* line 90, static/styles/scss/global/form.scss */
+  .form__agreement span {
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.002em;
+    color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding-left: 24px; }
+    /* line 98, static/styles/scss/global/form.scss */
+    .form__agreement span:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      border: 1px solid #5945F3;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    /* line 109, static/styles/scss/global/form.scss */
+    .form__agreement span:after {
+      content: '';
+      width: 6px;
+      height: 10px;
+      border-top: 1px solid #5945F3;
+      border-left: 1px solid #5945F3;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      position: absolute;
+      left: 5px;
+      top: calc(50% - 2px);
+      -webkit-transform: translateY(-50%) rotate(-135deg);
+              transform: translateY(-50%) rotate(-135deg);
+      display: none; }
+
+/* line 125, static/styles/scss/global/form.scss */
+.form__submit {
+  display: block;
+  padding: 17px 38px 13px;
+  background-color: #5945F3;
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer; }
+  /* line 136, static/styles/scss/global/form.scss */
+  .form__submit:hover {
+    background-color: #EE706B; }
 
 /*# sourceMappingURL=style.css.map */
