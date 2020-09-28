@@ -5826,6 +5826,94 @@ ul.posterprogressbar {
 .contacts__tab-content-item {
   display: none; }
 
+/* line 1, static/styles/scss/404/not-found.scss */
+.not-found {
+  background-color: #ED5D2A;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 9, static/styles/scss/404/not-found.scss */
+.not-found__container {
+  padding-top: 10.7638888889vw; }
+  @media (max-width: 992px) {
+    /* line 9, static/styles/scss/404/not-found.scss */
+    .not-found__container {
+      padding-top: 120px; } }
+  @media (max-width: 540px) {
+    /* line 9, static/styles/scss/404/not-found.scss */
+    .not-found__container {
+      padding-top: 138px; } }
+
+/* line 21, static/styles/scss/404/not-found.scss */
+.not-found__title {
+  text-align: center;
+  font-size: 161px;
+  line-height: 161px;
+  color: #5945F3; }
+  @media (max-width: 992px) {
+    /* line 21, static/styles/scss/404/not-found.scss */
+    .not-found__title {
+      font-size: 135px;
+      line-height: 135px; } }
+  @media (max-width: 540px) {
+    /* line 21, static/styles/scss/404/not-found.scss */
+    .not-found__title {
+      font-size: 105px;
+      line-height: 105px; } }
+
+/* line 35, static/styles/scss/404/not-found.scss */
+.not-found__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff; }
+  @media (max-width: 540px) {
+    /* line 40, static/styles/scss/404/not-found.scss */
+    .not-found__text br {
+      display: none; } }
+  /* line 45, static/styles/scss/404/not-found.scss */
+  .not-found__text a {
+    text-decoration: underline;
+    color: #fff;
+    white-space: nowrap; }
+    /* line 49, static/styles/scss/404/not-found.scss */
+    .not-found__text a:hover {
+      text-decoration: none; }
+
+/* line 55, static/styles/scss/404/not-found.scss */
+.not-found__misc {
+  font-size: 745px;
+  line-height: 745px;
+  color: #D05853;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%); }
+  @media (max-width: 992px) {
+    /* line 55, static/styles/scss/404/not-found.scss */
+    .not-found__misc {
+      font-size: 551px;
+      line-height: 551px;
+      left: -50px;
+      -webkit-transform: translate(0, 50%);
+              transform: translate(0, 50%); } }
+  @media (max-width: 540px) {
+    /* line 55, static/styles/scss/404/not-found.scss */
+    .not-found__misc {
+      font-size: 441px;
+      line-height: 441px;
+      left: -60px;
+      bottom: 70px; } }
+
 /* line 1, static/styles/scss/global/mailing.scss */
 .mailing {
   background-color: #EEEEEE;
