@@ -5842,6 +5842,7 @@ ul.posterprogressbar {
 
 /* line 9, static/styles/scss/404/not-found.scss */
 .not-found__container {
+  z-index: 1;
   padding-top: 10.7638888889vw; }
   @media (max-width: 992px) {
     /* line 9, static/styles/scss/404/not-found.scss */
@@ -5852,43 +5853,43 @@ ul.posterprogressbar {
     .not-found__container {
       padding-top: 138px; } }
 
-/* line 21, static/styles/scss/404/not-found.scss */
+/* line 20, static/styles/scss/404/not-found.scss */
 .not-found__title {
   text-align: center;
   font-size: 161px;
   line-height: 161px;
   color: #5945F3; }
   @media (max-width: 992px) {
-    /* line 21, static/styles/scss/404/not-found.scss */
+    /* line 20, static/styles/scss/404/not-found.scss */
     .not-found__title {
       font-size: 135px;
       line-height: 135px; } }
   @media (max-width: 540px) {
-    /* line 21, static/styles/scss/404/not-found.scss */
+    /* line 20, static/styles/scss/404/not-found.scss */
     .not-found__title {
       font-size: 105px;
       line-height: 105px; } }
 
-/* line 35, static/styles/scss/404/not-found.scss */
+/* line 34, static/styles/scss/404/not-found.scss */
 .not-found__text {
   text-align: center;
   font-size: 16px;
   line-height: 24px;
   color: #fff; }
   @media (max-width: 540px) {
-    /* line 40, static/styles/scss/404/not-found.scss */
+    /* line 39, static/styles/scss/404/not-found.scss */
     .not-found__text br {
       display: none; } }
-  /* line 45, static/styles/scss/404/not-found.scss */
+  /* line 44, static/styles/scss/404/not-found.scss */
   .not-found__text a {
     text-decoration: underline;
     color: #fff;
     white-space: nowrap; }
-    /* line 49, static/styles/scss/404/not-found.scss */
+    /* line 48, static/styles/scss/404/not-found.scss */
     .not-found__text a:hover {
       text-decoration: none; }
 
-/* line 55, static/styles/scss/404/not-found.scss */
+/* line 54, static/styles/scss/404/not-found.scss */
 .not-found__misc {
   font-size: 745px;
   line-height: 745px;
@@ -5899,7 +5900,7 @@ ul.posterprogressbar {
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%); }
   @media (max-width: 992px) {
-    /* line 55, static/styles/scss/404/not-found.scss */
+    /* line 54, static/styles/scss/404/not-found.scss */
     .not-found__misc {
       font-size: 551px;
       line-height: 551px;
@@ -5907,7 +5908,7 @@ ul.posterprogressbar {
       -webkit-transform: translate(0, 50%);
               transform: translate(0, 50%); } }
   @media (max-width: 540px) {
-    /* line 55, static/styles/scss/404/not-found.scss */
+    /* line 54, static/styles/scss/404/not-found.scss */
     .not-found__misc {
       font-size: 441px;
       line-height: 441px;

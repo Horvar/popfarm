@@ -7,8 +7,7 @@
     flex-direction: column;
 }
 .not-found__container {
-    // margin: auto 0;
-    // padding-bottom: 155px;
+    z-index: 1;
     padding-top: pxToVw(1440, 155px);
     @media (max-width: 992px) {
         padding-top: 120px;
