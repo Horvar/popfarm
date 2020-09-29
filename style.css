@@ -6043,7 +6043,7 @@ ul.posterprogressbar {
           -ms-flex-direction: column;
               flex-direction: column; } }
   /* line 9, static/styles/scss/global/form.scss */
-  .form__inputs input[type=text] {
+  .form__inputs input {
     outline: none;
     width: 100%;
     padding: 14px 16px 12px;
@@ -6055,20 +6055,20 @@ ul.posterprogressbar {
     border-radius: 0;
     border: 1px solid #BABABA; }
     /* line 19, static/styles/scss/global/form.scss */
-    .form__inputs input[type=text]::-webkit-input-placeholder {
+    .form__inputs input::-webkit-input-placeholder {
       color: #000;
       opacity: 0.5; }
-    .form__inputs input[type=text]:-ms-input-placeholder {
+    .form__inputs input:-ms-input-placeholder {
       color: #000;
       opacity: 0.5; }
-    .form__inputs input[type=text]::-ms-input-placeholder {
+    .form__inputs input::-ms-input-placeholder {
       color: #000;
       opacity: 0.5; }
-    .form__inputs input[type=text]::placeholder {
+    .form__inputs input::placeholder {
       color: #000;
       opacity: 0.5; }
     /* line 23, static/styles/scss/global/form.scss */
-    .form__inputs input[type=text] + input {
+    .form__inputs input + input {
       margin-top: 16px; }
   /* line 27, static/styles/scss/global/form.scss */
   .form__inputs textarea {
