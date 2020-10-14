@@ -104,3 +104,31 @@
     }
   }
 }
+
+.poster__status {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 10px;
+  transform: translate(85%, -50%);
+  z-index: 1;
+}
+.poster__status-img {
+  &_rotate {
+    -webkit-animation: rotating 10s linear infinite;
+  }
+  &_absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes rotating {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}

@@ -5233,6 +5233,31 @@ ul.posterprogressbar {
   -webkit-transition-delay: 0ms;
           transition-delay: 0ms; }
 
+/* line 108, static/styles/scss/common.scss */
+.poster__status {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 10px;
+  -webkit-transform: translate(85%, -50%);
+          transform: translate(85%, -50%);
+  z-index: 1; }
+
+/* line 116, static/styles/scss/common.scss */
+.poster__status-img_rotate {
+  -webkit-animation: rotating 10s linear infinite; }
+/* line 119, static/styles/scss/common.scss */
+.poster__status-img_absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
 /* line 1, static/styles/scss/calendar/calendar.scss */
 .calendar {
   padding-top: 64px; }
