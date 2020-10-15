@@ -190,6 +190,7 @@
     &_crossed {
         border: 1px solid #FB7053;
         background: linear-gradient(to top right, transparent calc(50% - 1px), #FB7053, transparent calc(50% + 1px) );
+        z-index: 1;
         .calendar__event-date, .calendar__event-name, .calendar__event-location {
             color: #000;
             * {

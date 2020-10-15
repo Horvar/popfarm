@@ -5458,19 +5458,20 @@ ul.posterprogressbar {
   /* line 190, static/styles/scss/calendar/calendar.scss */
   .calendar__event_crossed {
     border: 1px solid #FB7053;
-    background: linear-gradient(to top right, transparent calc(50% - 1px), #FB7053, transparent calc(50% + 1px)); }
-    /* line 193, static/styles/scss/calendar/calendar.scss */
+    background: linear-gradient(to top right, transparent calc(50% - 1px), #FB7053, transparent calc(50% + 1px));
+    z-index: 1; }
+    /* line 194, static/styles/scss/calendar/calendar.scss */
     .calendar__event_crossed .calendar__event-date, .calendar__event_crossed .calendar__event-name, .calendar__event_crossed .calendar__event-location {
       color: #000; }
-      /* line 195, static/styles/scss/calendar/calendar.scss */
+      /* line 196, static/styles/scss/calendar/calendar.scss */
       .calendar__event_crossed .calendar__event-date *, .calendar__event_crossed .calendar__event-name *, .calendar__event_crossed .calendar__event-location * {
         color: #000; }
   @media (max-width: 740px) {
-    /* line 200, static/styles/scss/calendar/calendar.scss */
+    /* line 201, static/styles/scss/calendar/calendar.scss */
     .calendar__event_yellow {
       background-color: #FFFF00;
       position: relative; }
-      /* line 204, static/styles/scss/calendar/calendar.scss */
+      /* line 205, static/styles/scss/calendar/calendar.scss */
       .calendar__event_yellow:after {
         content: '';
         background: url("/static/images/rescheduling.png");
@@ -5486,11 +5487,11 @@ ul.posterprogressbar {
     -webkit-transform: rotate(0deg); }
   to {
     -webkit-transform: rotate(360deg); } }
-/* line 227, static/styles/scss/calendar/calendar.scss */
+/* line 228, static/styles/scss/calendar/calendar.scss */
 .calendar__event_yellow:after {
   -webkit-animation: rotating 10s linear infinite; }
 
-/* line 231, static/styles/scss/calendar/calendar.scss */
+/* line 232, static/styles/scss/calendar/calendar.scss */
 .calendar__event-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5504,34 +5505,34 @@ ul.posterprogressbar {
   text-decoration: none;
   color: inherit; }
   @media (max-width: 992px) {
-    /* line 231, static/styles/scss/calendar/calendar.scss */
+    /* line 232, static/styles/scss/calendar/calendar.scss */
     .calendar__event-content {
       padding: 36px 18px 28px; } }
 
-/* line 245, static/styles/scss/calendar/calendar.scss */
+/* line 246, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date_pink span {
   color: #EE706B; }
-/* line 249, static/styles/scss/calendar/calendar.scss */
+/* line 250, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date + * {
   margin-top: 24px; }
   @media (max-width: 740px) {
-    /* line 249, static/styles/scss/calendar/calendar.scss */
+    /* line 250, static/styles/scss/calendar/calendar.scss */
     .calendar__event-date + * {
       margin-top: 24px; } }
-/* line 255, static/styles/scss/calendar/calendar.scss */
+/* line 256, static/styles/scss/calendar/calendar.scss */
 .calendar__event-date p {
   font-weight: bold;
   font-size: 44px;
   line-height: 44px; }
   @media (max-width: 740px) {
-    /* line 255, static/styles/scss/calendar/calendar.scss */
+    /* line 256, static/styles/scss/calendar/calendar.scss */
     .calendar__event-date p {
       font-size: 44px;
       line-height: 44px; } }
-  /* line 263, static/styles/scss/calendar/calendar.scss */
+  /* line 264, static/styles/scss/calendar/calendar.scss */
   .calendar__event-date p + .calendar__event-date p {
     margin-left: 4px; }
-  /* line 266, static/styles/scss/calendar/calendar.scss */
+  /* line 267, static/styles/scss/calendar/calendar.scss */
   .calendar__event-date p span {
     position: absolute;
     font-size: 10px;
@@ -5539,29 +5540,29 @@ ul.posterprogressbar {
     text-transform: uppercase;
     margin-left: 4px; }
     @media (max-width: 740px) {
-      /* line 266, static/styles/scss/calendar/calendar.scss */
+      /* line 267, static/styles/scss/calendar/calendar.scss */
       .calendar__event-date p span {
         font-size: 10px;
         line-height: 10px;
         font-weight: bold; } }
 
-/* line 280, static/styles/scss/calendar/calendar.scss */
+/* line 281, static/styles/scss/calendar/calendar.scss */
 .calendar__event-name {
   display: block;
   text-decoration: none;
   color: #000;
   margin-bottom: 14px;
   margin-right: 16px; }
-  /* line 286, static/styles/scss/calendar/calendar.scss */
+  /* line 287, static/styles/scss/calendar/calendar.scss */
   .calendar__event-name p {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
     color: #5945F3; }
-    /* line 291, static/styles/scss/calendar/calendar.scss */
+    /* line 292, static/styles/scss/calendar/calendar.scss */
     .calendar__event-name p + .calendar__event-name p {
       margin-left: 6px; }
-    /* line 294, static/styles/scss/calendar/calendar.scss */
+    /* line 295, static/styles/scss/calendar/calendar.scss */
     .calendar__event-name p span {
       position: absolute;
       font-size: 10px;
@@ -5569,13 +5570,13 @@ ul.posterprogressbar {
       text-transform: uppercase;
       margin-left: 4px; }
       @media (max-width: 740px) {
-        /* line 294, static/styles/scss/calendar/calendar.scss */
+        /* line 295, static/styles/scss/calendar/calendar.scss */
         .calendar__event-name p span {
           font-size: 10px;
           line-height: 13px;
           font-weight: bold; } }
 
-/* line 308, static/styles/scss/calendar/calendar.scss */
+/* line 309, static/styles/scss/calendar/calendar.scss */
 .calendar__event-location {
   font-weight: bold;
   font-size: 14px;
@@ -5583,11 +5584,11 @@ ul.posterprogressbar {
   min-height: 32px;
   margin-top: auto; }
   @media (max-width: 1440px) {
-    /* line 308, static/styles/scss/calendar/calendar.scss */
+    /* line 309, static/styles/scss/calendar/calendar.scss */
     .calendar__event-location {
       font-size: 12px; } }
 
-/* line 318, static/styles/scss/calendar/calendar.scss */
+/* line 319, static/styles/scss/calendar/calendar.scss */
 .calendar__event-status {
   font-size: 12px;
   line-height: 15px;
@@ -5611,12 +5612,12 @@ ul.posterprogressbar {
           box-sizing: border-box;
   width: 100%; }
   @media (max-width: 992px) {
-    /* line 318, static/styles/scss/calendar/calendar.scss */
+    /* line 319, static/styles/scss/calendar/calendar.scss */
     .calendar__event-status {
       padding: 0 12px;
       margin-bottom: 31px; } }
   @media (max-width: 740px) {
-    /* line 318, static/styles/scss/calendar/calendar.scss */
+    /* line 319, static/styles/scss/calendar/calendar.scss */
     .calendar__event-status {
       font-size: 12px;
       line-height: 15px;
@@ -5632,14 +5633,14 @@ ul.posterprogressbar {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  /* line 350, static/styles/scss/calendar/calendar.scss */
+  /* line 351, static/styles/scss/calendar/calendar.scss */
   .calendar__event-status p {
     width: 100%; }
   @media (max-width: 740px) {
-    /* line 353, static/styles/scss/calendar/calendar.scss */
+    /* line 354, static/styles/scss/calendar/calendar.scss */
     .calendar__event-status_tick {
       position: relative; }
-      /* line 356, static/styles/scss/calendar/calendar.scss */
+      /* line 357, static/styles/scss/calendar/calendar.scss */
       .calendar__event-status_tick:before {
         content: '';
         width: 18px;
@@ -5651,7 +5652,7 @@ ul.posterprogressbar {
         left: 50%;
         -webkit-transform: translate(-50%, 0);
                 transform: translate(-50%, 0); }
-      /* line 367, static/styles/scss/calendar/calendar.scss */
+      /* line 368, static/styles/scss/calendar/calendar.scss */
       .calendar__event-status_tick:after {
         content: '';
         width: 7px;
@@ -5664,7 +5665,7 @@ ul.posterprogressbar {
         -webkit-transform: translate(-50%, 0) rotate(-135deg);
                 transform: translate(-50%, 0) rotate(-135deg); } }
 
-/* line 381, static/styles/scss/calendar/calendar.scss */
+/* line 382, static/styles/scss/calendar/calendar.scss */
 .calendar__event-button {
   width: calc(100% + 2px);
   margin-left: -1px;
@@ -5674,10 +5675,10 @@ ul.posterprogressbar {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   @media (max-width: 992px) {
-    /* line 381, static/styles/scss/calendar/calendar.scss */
+    /* line 382, static/styles/scss/calendar/calendar.scss */
     .calendar__event-button {
       padding: 0 12px 31px; } }
-  /* line 391, static/styles/scss/calendar/calendar.scss */
+  /* line 392, static/styles/scss/calendar/calendar.scss */
   .calendar__event-button a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5699,12 +5700,12 @@ ul.posterprogressbar {
     line-height: 12px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    /* line 406, static/styles/scss/calendar/calendar.scss */
+    /* line 407, static/styles/scss/calendar/calendar.scss */
     .calendar__event-button a:hover {
       background-color: #5945F3;
       color: #fff; }
 
-/* line 413, static/styles/scss/calendar/calendar.scss */
+/* line 414, static/styles/scss/calendar/calendar.scss */
 .calendar__event-rescheduling {
   position: absolute;
   top: 0;
@@ -5731,7 +5732,7 @@ ul.posterprogressbar {
   color: #FE5D4F;
   z-index: -1; }
   @media (max-width: 992px) {
-    /* line 413, static/styles/scss/calendar/calendar.scss */
+    /* line 414, static/styles/scss/calendar/calendar.scss */
     .calendar__event-rescheduling {
       height: 74px; } }
 
