@@ -4,18 +4,35 @@
     position: fixed;
     bottom: 0;
     z-index: 1;
-    display: none;
 }
 .mailing__container {
     padding: 24px 64px 24px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    @media (max-width: 1400px) {
+        padding: 24px;
+    }
+    @media (max-width: 1240px) {
+        flex-wrap: wrap;
+    }
 }
 
 .mailing__form {
     display: flex;
     margin-left: auto;
+    @media (max-width: 1240px) {
+        margin-left: 0;
+        margin-right: auto;
+        width: 628px;
+    }
+    @media (max-width: 820px) {
+        width: calc(100% - 125px);
+    }
+    @media (max-width: 580px) {
+        flex-wrap: wrap;
+        width: 100%;
+    }
     & + * {
         margin-left: 52px;
     }
@@ -25,6 +42,19 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 642px;
+    @media (max-width: 1240px) {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    @media (max-width: 580px) {
+        margin-bottom: 24px;
+    }
+    br {
+        @media (max-width: 820px) {
+            display: none;
+        }
+    }
 }
 .mailing__input {
     border: 1px solid #BABABA;
@@ -36,6 +66,19 @@
     height: 42px;
     font-size: 16px;
     line-height: 16px;
+    @media (max-width: 1400px) {
+        width: 220px;
+    }
+    @media (max-width: 1240px) {
+        width: 400px;
+        border-right: 1px solid #BABABA;
+        margin-right: 16px;
+    }
+    @media (max-width: 580px) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
     &::placeholder {
         color: #000;
         font-size: 16px;
@@ -57,6 +100,14 @@
     border: none;
     cursor: pointer;
     margin-left: auto;
+    @media (max-width: 1240px) {
+        width: 200px;
+    }
+    @media (max-width: 580px) {
+        margin-right: auto;
+        margin-left: 0;
+        width: auto;
+    }
     &:hover {
         background-color: #EE706B;
     }
@@ -68,9 +119,26 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    @media (max-width: 1400px) {
+        margin-left: 24px;
+    }
+    @media (max-width: 1240px) {
+        position: absolute;
+        top: 19px;
+        right: 0;
+    }
+    @media (max-width: 820px) {
+        position: absolute;
+        top: auto;
+        bottom: 29px;
+        right: 0;
+    }
     span {
         padding-top: 3px;
         margin-right: 7px;
+        @media (max-width: 375px) {
+            margin-right: 0;
+        }
     }
     svg {
         fill: #000;
